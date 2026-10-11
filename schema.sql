@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS documents;
+CREATE TABLE IF NOT EXISTS documents (documentID INTEGER PRIMARY KEY, r2Key TEXT,documentName TEXT,documentDate TIMESTAMP);

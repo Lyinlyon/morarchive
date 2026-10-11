@@ -1,6 +1,7 @@
 import '@mantine/core/styles.css';
-import { AppShell, AppShellHeader, AppShellMain, Card, Center, DataList, DataListItem, MantineProvider } from '@mantine/core'
 
+import { AppShell, AppShellHeader, AppShellMain, Card, Center, DataList, DataListItem, MantineProvider } from '@mantine/core'
+import FileList from './FileList';
 
 function App(){
   
@@ -14,24 +15,11 @@ function App(){
         </Center>
       </AppShellHeader>
       <AppShellMain>
-        <DataList withDivider>
-          <DataListItem>
-            <Card>
-            PDF1
-          </Card>
-          </DataListItem>
-          <DataListItem>
-            <Card>
-            PDF2
-          </Card>
-          </DataListItem>
-          <DataListItem>
-            <Card>
-            PDF3
-          </Card>
-          </DataListItem>
+        
+        <FileList>
           
-        </DataList>
+        </FileList> 
+        
       </AppShellMain>
     </AppShell>
     </MantineProvider>
